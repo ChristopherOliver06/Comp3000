@@ -8,6 +8,7 @@ using System.Linq;
 
 public class VoiceRecog : MonoBehaviour
 {
+    public GameObject SphereTest;
     public GameObject CubeTest;
     private KeywordRecognizer SpellKeywordRecog;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
@@ -15,7 +16,7 @@ public class VoiceRecog : MonoBehaviour
     private void Start()
     {
         actions.Add("cube", Cube);
-       // actions.Add("sphere", Sphere);
+        actions.Add("sphere", Sphere);
 
 
         SpellKeywordRecog = new KeywordRecognizer(actions.Keys.ToArray());
@@ -38,8 +39,9 @@ public class VoiceRecog : MonoBehaviour
         Instantiate(CubeTest);
     }
 
-    private void SphereSpawn()
+    private void Sphere()
     {
-      //  Instantiate(Sphere(), new Vector3(newX, newZ, 1), Quaternion.identity);
+        Debug.Log("test");
+        Instantiate(SphereTest);
     }
 }

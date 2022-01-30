@@ -833,6 +833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb070dca264262e4394ea8c6d60197c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SphereTest: {fileID: 8727842109141718207, guid: 4a1aab820f137fd47a9ce5107a62014d,
+    type: 3}
   CubeTest: {fileID: 3175856069668866453, guid: 5333dfa9eab6d3e4491dd469a5db60aa,
     type: 3}
 --- !u!4 &810272080
